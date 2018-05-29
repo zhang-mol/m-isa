@@ -1,0 +1,28 @@
+html
+  font-size 10px
+.fl
+  float left
+.fr
+  float right
+.tc
+  text-align center
+.tl
+  text-align left
+.tr
+  text-align right
+.clearfix
+  display inline-block
+  &:after
+    display block
+    content "."
+    height 0
+    line-height 0
+    clear both
+    visibility hidden
+vendor(prop, args)
+  -webkit-{prop} args
+  -moz-{prop} args
+  -o-{prop} args
+  {prop} args
+border-radius()
+  vendor('border-radius', arguments)
